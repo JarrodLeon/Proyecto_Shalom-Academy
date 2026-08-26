@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shalom Academy · Gimnasia Rítmica en Turrucares</title>
+<meta name="description" content="Academia Shalom - gimnasia rítmica en Turrucares, Alajuela. Programas desde estimulación temprana hasta equipo competitivo.">
+<link rel="icon" href="images/logo.jpeg">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-shalom">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="images/logo.jpeg" alt="Logo Shalom Academy">
+      <span class="brand-name d-none d-sm-inline-block">Shalom Academy</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="programasDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programas</a>
+          <ul class="dropdown-menu" aria-labelledby="programasDrop">
+            <li><a class="dropdown-item" href="servicios.html">Servicios y precios</a></li>
+            <li><a class="dropdown-item" href="index.html#instructoras">Instructoras</a></li>
+            <li><a class="dropdown-item" href="galeria.html">Galería y multimedia</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+        <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca del sitio</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="nav-link btn-nav-cta" href="contacto.html">Clase de prueba</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HEADER con imagen de fondo ===== -->
+<header class="home-header">
+  <div class="container home-header-content">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <span class="eyebrow">✦ Gimnasia rítmica &amp; artística</span>
+        <h1 class="home-title">Gimnasia rítmica con <span>disciplina</span>, <span>alegría</span> y <span>confianza</span></h1>
+        <p class="home-lead">Academia Shalom acompaña a cada niña desde sus primeros movimientos hasta la alta competencia, en Turrucares, Alajuela.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="servicios.html" class="btn-shalom-primary">Ver programas y precios</a>
+          <a href="https://api.whatsapp.com/send?phone=50671546206&text=Buenas%20tarde%2C%20quisiera%20informaci%C3%B3n%20sobre%20las%20clases%20de%20gimnasia%20r%C3%ADtmica%20para%20ni%C3%B1as%20de%20___%20a%C3%B1os%20de%20edad%20" target="_blank" rel="noopener" class="btn-shalom-outline">
+            <i class="bi bi-whatsapp"></i> Escríbenos por WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-5 text-center">
+        <img src="images/logo.jpeg" alt="Shalom Academy" class="home-logo-img">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== CARRUSEL BOOTSTRAP ===== -->
+<section class="section-alt">
+  <div class="container">
+    <div class="text-center mb-4">
+      <span class="badge-dot">Destacados</span>
+      <h2 class="mt-2">Lo que vivimos en Shalom Academy</h2>
+    </div>
+  </div>
+  <div id="shalomCarousel" class="carousel slide carousel-shalom" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#shalomCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#shalomCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#shalomCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-slide-bg" style="background-image:url('images/galeria/fin-de-ano-grupo.jpg');"></div>
+        <img src="images/galeria/fin-de-ano-grupo.jpg" class="d-block carousel-img" alt="Presentación de Fin de Año">
+        <div class="carousel-caption">
+          <h3>Presentación de Fin de Año</h3>
+          <p class="d-none d-md-block">Nuestras atletas cerraron el año con una presentación llena de alegría.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-slide-bg" style="background-image:url('images/galeria/equipo-podio-medallas.jpg');"></div>
+        <img src="images/galeria/equipo-podio-medallas.jpg" class="d-block carousel-img" alt="Equipo de Competencia">
+        <div class="carousel-caption">
+          <h3>Equipo de Competencia</h3>
+          <p class="d-none d-md-block">Entrenamiento técnico de alto nivel, martes, miércoles y sábados.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-slide-bg" style="background-image:url('images/galeria/kids-obstaculos.jpg');"></div>
+        <img src="images/galeria/kids-obstaculos.jpg" class="d-block carousel-img" alt="Kids Recreativo">
+        <div class="carousel-caption">
+          <h3>Nuestras pequeñas gimnastas</h3>
+          <p class="d-none d-md-block">Cada clase combina disciplina, juego y mucha diversión.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#shalomCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#shalomCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</section>
+
+<!-- ===== NOTICIAS / DESTACADOS ===== -->
+<section class="section-alt">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="badge-dot">Noticias y novedades</span>
+      <h2 class="mt-2">Lo más reciente en Shalom Academy</h2>
+    </div>
+    <div class="row g-4">
+      <article class="col-md-4">
+        <div class="card-shalom h-100">
+          <img src="images/galeria/torneo-flores.jpg" class="rounded-4 mb-3 w-100" style="aspect-ratio:4/3; object-fit:cover; object-position:center 15%;" alt="Torneo de las Flores">
+          <span class="tag">Competencia</span>
+          <h3 class="h6">¡Oro en el Torneo de las Flores!</h3>
+          <p class="text-muted small mb-0">Nuestras atletas brillaron representando a Shalom Academy en la 9ª edición del torneo.</p>
+        </div>
+      </article>
+      <article class="col-md-4">
+        <div class="card-shalom h-100">
+          <img src="images/galeria/leotardos-coronas.jpg" class="rounded-4 mb-3 w-100" style="aspect-ratio:4/3; object-fit:cover; object-position:center 15%;" alt="Competencia regional">
+          <span class="tag">Evento</span>
+          <h3 class="h6">Gran participación en competencia regional</h3>
+          <p class="text-muted small mb-0">El esfuerzo y la dedicación de nuestro equipo se reflejan en cada presentación.</p>
+        </div>
+      </article>
+      <article class="col-md-4">
+        <div class="card-shalom h-100">
+          <img src="images/galeria/mommy-and-me.jpg" class="rounded-4 mb-3 w-100" style="aspect-ratio:4/3; object-fit:cover; object-position:center 25%;" alt="Mommy and Me">
+          <span class="tag">Programa</span>
+          <h3 class="h6">El vínculo que se crea en Mommy &amp; Me</h3>
+          <p class="text-muted small mb-0">Un espacio donde madres e hijas comparten sus primeros pasos en la gimnasia.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INSTRUCTORAS ===== -->
+<section id="instructoras">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="badge-dot">Nuestro equipo</span>
+      <h2 class="mt-2">Instructoras</h2>
+      <p class="text-muted">Quienes lideran la formación técnica y humana de cada atleta en Academia Shalom.</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-5">
+        <div class="card-shalom h-100 text-center">
+          <img src="images/instructora-ciara.png" alt="Ciara León, directora y entrenadora principal" class="rounded-circle mx-auto mb-3" style="width:140px; height:140px; object-fit:cover; border:4px solid var(--pink-soft);">
+          <h3 class="h5 mb-1">Ciara León</h3>
+          <span class="tag mb-3">Directora y Entrenadora Principal</span>
+          <p class="text-muted small mb-0">Licenciada en Enfermería, Entrenadora Federada de Gimnasia Rítmica y Juez Internacional Brevet 4. Desde 2019 forma atletas a nivel cantonal y nacional, combinando su formación en salud y neurociencia aplicada al deporte con experiencia propia como atleta. Hoy dirige la planificación técnica y la preparación competitiva de la academia.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-5">
+        <div class="card-shalom h-100 text-center">
+          <img src="images/instructora-annie.jpeg" alt="Annie Pacheco Calderón, entrenadora" class="rounded-circle mx-auto mb-3" style="width:140px; height:140px; object-fit:cover; object-position:top; border:4px solid var(--pink-soft);">
+          <h3 class="h5 mb-1">Annie Pacheco Calderón</h3>
+          <span class="tag mb-3">Entrenadora</span>
+          <p class="text-muted small mb-0">Cuenta con capacitación especializada en Gimnasia Rítmica para Niveles y Recreativo, además de formación en Gimnasia para Todos y participación constante en seminarios de actualización técnica. Su experiencia le permite acompañar grupos recreativos y competitivos con profesionalismo, cercanía y vocación de servicio.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== POR QUÉ ELEGIRNOS ===== -->
+<section class="section-alt">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-6">
+        <span class="badge-dot">Nuestro enfoque</span>
+        <h2 class="mt-2 mb-3">Disciplina con calidez</h2>
+        <p class="text-muted">En Academia Shalom creemos que la técnica y la ternura pueden ir de la mano. Cada estudiante avanza a su propio ritmo, guiada por entrenadoras certificadas en un ambiente seguro y motivador.</p>
+        <ul class="list-unstyled mt-3">
+          <li class="mb-2"> Programas desde los 2 meses hasta atletas de competencia</li>
+          <li class="mb-2"> Entrenadoras federadas y certificadas</li>
+          <li class="mb-2"> Clases privadas y preparación competitiva</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <div class="cta-block">
+          <h2 class="h3 mb-2">Su primer salto empieza aquí</h2>
+          <p class="mb-4">Agenda una clase de prueba y descubre el programa ideal.</p>
+          <a href="contacto.html" class="btn-shalom-primary">Agendar clase de prueba</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NAV IDA/VUELTA ===== -->
+<div class="container">
+  <div class="page-nav">
+    <span></span>
+    <a class="next" href="historia.html"><span class="dir">Siguiente →</span> Historia de la academia</a>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer-panel">
+  <div class="container">
+    <div class="footer-panel-top">
+      <div class="d-flex align-items-center gap-3">
+        <img src="images/logo.jpeg" alt="Shalom Academy" class="footer-logo">
+        <div>
+          <strong class="brand-name" style="font-size:1rem;">Shalom Academy</strong>
+          <p class="small text-muted mb-0">Turrucares, Alajuela · Costa Rica</p>
+        </div>
+      </div>
+      <div class="d-flex gap-2 flex-wrap">
+        <a href="https://api.whatsapp.com/send?phone=50671546206&amp;text=Buenas%20tarde%2C%20quisiera%20informaci%C3%B3n%20sobre%20las%20clases%20de%20gimnasia%20r%C3%ADtmica%20para%20ni%C3%B1as%20de%20___%20a%C3%B1os%20de%20edad%20" target="_blank" rel="noopener" class="social-panel-icon sm" style="background:#25D366;" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.instagram.com/shalom_academygr" target="_blank" rel="noopener" class="social-panel-icon sm" style="background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af);" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/noticiaslagaritaa/posts/shalom-academy-gimnasia-r%C3%ADtmica-turrucares-te-trae-campamento-de-verano-2025-par/1002144391943641/" target="_blank" rel="noopener" class="social-panel-icon sm" style="background:#1877F2;" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+    <hr class="footer-panel-card">
+    <div class="footer-panel-links d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <a href="acerca.html">Acerca del sitio</a>
+      <span class="small text-muted">© 2026 Shalom Academy. Todos los derechos reservados.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

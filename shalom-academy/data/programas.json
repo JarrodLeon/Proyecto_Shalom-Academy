@@ -1,0 +1,22 @@
+[
+  {
+    "edad": "2 a 3 años y medio",
+    "nombre": "Mommy & Me",
+    "descripcion": "Espacio de exploración y movimiento donde las niñas participan acompañadas por un adulto, fortaleciendo el vínculo afectivo mientras desarrollan coordinación y confianza."
+  },
+  {
+    "edad": "3 años y medio a 5 años",
+    "nombre": "Babies",
+    "descripcion": "Iniciación deportiva que promueve habilidades motrices básicas, coordinación, equilibrio y socialización a través de actividades lúdicas y gimnasia rítmica."
+  },
+  {
+    "edad": "6 a 10 años",
+    "nombre": "Kids",
+    "descripcion": "Las atletas fortalecen sus fundamentos técnicos mientras desarrollan disciplina, flexibilidad, coordinación y trabajo en equipo."
+  },
+  {
+    "edad": "11 años en adelante",
+    "nombre": "Junior",
+    "descripcion": "Dirigido a atletas que buscan perfeccionar sus habilidades técnicas y continuar su crecimiento deportivo dentro de la gimnasia rítmica."
+  }
+]

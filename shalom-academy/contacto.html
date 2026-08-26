@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto · Shalom Academy</title>
+<link rel="icon" href="images/logo.jpeg">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-shalom">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="images/logo.jpeg" alt="Logo Shalom Academy">
+      <span class="brand-name d-none d-sm-inline-block">Shalom Academy</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="programasDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programas</a>
+          <ul class="dropdown-menu" aria-labelledby="programasDrop">
+            <li><a class="dropdown-item" href="servicios.html">Servicios y precios</a></li>
+            <li><a class="dropdown-item" href="index.html#instructoras">Instructoras</a></li>
+            <li><a class="dropdown-item" href="galeria.html">Galería y multimedia</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+        <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca del sitio</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="nav-link btn-nav-cta" href="contacto.html">Clase de prueba</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">✦ Contacto</span>
+    <h1>Hablemos</h1>
+    <p class="lead mt-3">¿Dudas sobre horarios, precios o el proceso de inscripción? Escríbenos.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <div class="card-shalom">
+          <span class="tag">Información de contacto</span>
+          <ul class="info-list">
+            <li>
+              <span class="ico"><i class="bi bi-envelope-fill"></i></span>
+              <div>
+                <b>Correo</b>
+                <a href="mailto:admi.shalomacademygr@gmail.com">admi.shalomacademygr@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <span class="ico"><i class="bi bi-whatsapp"></i></span>
+              <div>
+                <b>Teléfono / WhatsApp</b>
+                <a href="https://api.whatsapp.com/send?phone=50671546206&amp;text=Buenas%20tarde%2C%20quisiera%20informaci%C3%B3n%20sobre%20las%20clases%20de%20gimnasia%20r%C3%ADtmica%20para%20ni%C3%B1as%20de%20___%20a%C3%B1os%20de%20edad%20" target="_blank" rel="noopener">+506 7154-6206</a>
+              </div>
+            </li>
+            <li>
+              <span class="ico"><i class="bi bi-geo-alt-fill"></i></span>
+              <div>
+                <b>Dirección</b>
+                <span class="text-muted">Turrucares, Alajuela, Costa Rica<br>(ver mapa en <a href="ubicacion.html">Ubicación</a>)</span>
+              </div>
+            </li>
+            <li>
+              <span class="ico"><i class="bi bi-clock-fill"></i></span>
+              <div>
+                <b>Horario de atención</b>
+                <span class="text-muted">Lunes a sábado, 8:00 am – 7:00 pm</span>
+              </div>
+            </li>
+            <li>
+              <span class="ico"><i class="bi bi-instagram"></i></span>
+              <div>
+                <b>Redes sociales</b>
+                <a href="https://www.instagram.com/shalom_academygr" target="_blank" rel="noopener">@shalom_academygr</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="card-shalom">
+          <h3 class="h5 mb-3">Envíanos un mensaje</h3>
+          <form id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label small fw-bold" for="nombre">Nombre completo *</label>
+                <input type="text" class="form-control" id="nombre" required>
+                <div class="invalid-feedback">Por favor ingresa tu nombre completo.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-bold" for="correo">Correo electrónico *</label>
+                <input type="email" class="form-control" id="correo" required>
+                <div class="invalid-feedback">Ingresa un correo válido.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-bold" for="fechaNacimiento">Fecha de nacimiento *</label>
+                <input type="date" class="form-control" id="fechaNacimiento" required>
+                <div class="invalid-feedback">Selecciona una fecha de nacimiento válida.</div>
+                <input type="hidden" id="edadCalculada" name="edadCalculada">
+                <p class="small text-muted mt-1 mb-0" id="edadTexto">Edad calculada: —</p>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-bold" for="rangoIngreso">Rango de ingreso mensual del hogar *</label>
+                <select class="form-select" id="rangoIngreso" required>
+                  <option value="" selected disabled>Selecciona un rango</option>
+                  <option value="menos-300000">Menos de ₡300,000</option>
+                  <option value="300000-600000">₡300,000 – ₡600,000</option>
+                  <option value="600000-1000000">₡600,000 – ₡1,000,000</option>
+                  <option value="mas-1000000">Más de ₡1,000,000</option>
+                </select>
+                <div class="invalid-feedback">Selecciona un rango de ingreso.</div>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label small fw-bold d-block">Género *</label>
+                <div class="d-flex gap-4 flex-wrap">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" id="generoF" value="femenino" required>
+                    <label class="form-check-label small" for="generoF">Femenino</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" id="generoM" value="masculino" required>
+                    <label class="form-check-label small" for="generoM">Masculino</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" id="generoO" value="otro" required>
+                    <label class="form-check-label small" for="generoO">Otro / Prefiero no decir</label>
+                  </div>
+                </div>
+                <div class="small text-danger mt-1 d-none" id="generoError">Selecciona una opción.</div>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label small fw-bold d-block">Grado académico (puede elegir más de uno) *</label>
+                <div class="d-flex gap-4 flex-wrap">
+                  <div class="form-check">
+                    <input class="form-check-input grado-check" type="checkbox" id="gradoPrimaria" value="primaria">
+                    <label class="form-check-label small" for="gradoPrimaria">Primaria</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input grado-check" type="checkbox" id="gradoSecundaria" value="secundaria">
+                    <label class="form-check-label small" for="gradoSecundaria">Secundaria</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input grado-check" type="checkbox" id="gradoTecnico" value="tecnico">
+                    <label class="form-check-label small" for="gradoTecnico">Técnico</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input grado-check" type="checkbox" id="gradoUniversitario" value="universitario">
+                    <label class="form-check-label small" for="gradoUniversitario">Universitario</label>
+                  </div>
+                </div>
+                <div class="small text-danger mt-1 d-none" id="gradoError">Selecciona al menos una opción.</div>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label small fw-bold" for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" placeholder="Cuéntanos qué programa te interesa..."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-shalom-primary w-100 w-md-auto">Enviar mensaje</button>
+              </div>
+              <div class="col-12">
+                <p id="formMsg" class="small fw-bold mt-2 mb-0" style="color:var(--pink-deep); display:none;">
+                  ¡Gracias por escribirnos! Te responderemos lo antes posible.
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="page-nav">
+    <a href="galeria.html"><span class="dir">← Anterior</span> Galería</a>
+    <a class="next" href="acerca.html"><span class="dir">Siguiente →</span> Acerca del sitio</a>
+  </div>
+</div>
+
+<footer class="site-footer-panel">
+  <div class="container">
+    <div class="footer-panel-top">
+      <div class="d-flex align-items-center gap-3">
+        <img src="images/logo.jpeg" alt="Shalom Academy" class="footer-logo">
+        <div>
+          <strong class="brand-name" style="font-size:1rem;">Shalom Academy</strong>
+          <p class="small text-muted mb-0">Turrucares, Alajuela · Costa Rica</p>
+        </div>
+      </div>
+      <div class="d-flex gap-2 flex-wrap">
+        <a href="https://api.whatsapp.com/send?phone=50671546206&amp;text=Buenas%20tarde%2C%20quisiera%20informaci%C3%B3n%20sobre%20las%20clases%20de%20gimnasia%20r%C3%ADtmica%20para%20ni%C3%B1as%20de%20___%20a%C3%B1os%20de%20edad%20" target="_blank" rel="noopener" class="social-panel-icon sm" style="background:#25D366;" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.instagram.com/shalom_academygr" target="_blank" rel="noopener" class="social-panel-icon sm" style="background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af);" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/noticiaslagaritaa/posts/shalom-academy-gimnasia-r%C3%ADtmica-turrucares-te-trae-campamento-de-verano-2025-par/1002144391943641/" target="_blank" rel="noopener" class="social-panel-icon sm" style="background:#1877F2;" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+    <hr class="footer-panel-card">
+    <div class="footer-panel-links d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <a href="acerca.html">Acerca del sitio</a>
+      <span class="small text-muted">© 2026 Shalom Academy. Todos los derechos reservados.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/contacto.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería y Multimedia · Shalom Academy</title>
+<link rel="icon" href="images/logo.jpeg">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-shalom">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="images/logo.jpeg" alt="Logo Shalom Academy">
+      <span class="brand-name d-none d-sm-inline-block">Shalom Academy</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="programasDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programas</a>
+          <ul class="dropdown-menu" aria-labelledby="programasDrop">
+            <li><a class="dropdown-item" href="servicios.html">Servicios y precios</a></li>
+            <li><a class="dropdown-item" href="index.html#instructoras">Instructoras</a></li>
+            <li><a class="dropdown-item" href="galeria.html">Galería y multimedia</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+        <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca del sitio</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="nav-link btn-nav-cta" href="contacto.html">Clase de prueba</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">✦ Galería y Multimedia</span>
+    <h1>Momentos en Shalom Academy</h1>
+    <p class="lead mt-3">Fotos, videos y audio de nuestras clases, presentaciones y competencias.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <!-- Filtros (jQuery) -->
+    <div class="d-flex justify-content-center gap-2 flex-wrap mb-5" id="filtroTipo">
+      <button class="btn-shalom-outline filtro-btn active" data-filtro="todos">Todos</button>
+      <button class="btn-shalom-outline filtro-btn" data-filtro="foto">Fotos</button>
+      <button class="btn-shalom-outline filtro-btn" data-filtro="video">Videos</button>
+    </div>
+
+    <div class="row g-3" id="galleryGrid">
+      <div class="col-12 text-center text-muted" id="galeriaLoading">Cargando contenido...</div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal para ampliar imagen -->
+<div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content" style="border-radius:22px; overflow:hidden;">
+      <div class="modal-body p-0">
+        <img id="modalImg" src="" alt="" class="img-fluid w-100">
+        <p id="modalCap" class="fw-bold text-center py-3 mb-0"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="page-nav">
+    <a href="servicios.html"><span class="dir">← Anterior</span> Servicios</a>
+    <a class="next" href="contacto.html"><span class="dir">Siguiente →</span> Contacto</a>
+  </div>
+</div>
+
+<footer class="site-footer-panel">
+  <div class="container">
+    <div class="footer-panel-top">
+      <div class="d-flex align-items-center gap-3">
+        <img src="images/logo.jpeg" alt="Shalom Academy" class="footer-logo">
+        <div>
+          <strong class="brand-name" style="font-size:1rem;">Shalom Academy</strong>
+          <p class="small text-muted mb-0">Turrucares, Alajuela · Costa Rica</p>
+        </div>
+      </div>
+      <div class="d-flex gap-2 flex-wrap">
+        <a href="https://api.whatsapp.com/send?phone=50671546206&amp;text=Buenas%20tarde%2C%20quisiera%20informaci%C3%B3n%20sobre%20las%20clases%20de%20gimnasia%20r%C3%ADtmica%20para%20ni%C3%B1as%20de%20___%20a%C3%B1os%20de%20edad%20" target="_blank" rel="noopener" class="social-panel-icon sm" style="background:#25D366;" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.instagram.com/shalom_academygr" target="_blank" rel="noopener" class="social-panel-icon sm" style="background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af);" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/noticiaslagaritaa/posts/shalom-academy-gimnasia-r%C3%ADtmica-turrucares-te-trae-campamento-de-verano-2025-par/1002144391943641/" target="_blank" rel="noopener" class="social-panel-icon sm" style="background:#1877F2;" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+    <hr class="footer-panel-card">
+    <div class="footer-panel-links d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <a href="acerca.html">Acerca del sitio</a>
+      <span class="small text-muted">© 2026 Shalom Academy. Todos los derechos reservados.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/galeria.js"></script>
+</body>
+</html>

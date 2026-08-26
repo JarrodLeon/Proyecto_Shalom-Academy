@@ -1,0 +1,488 @@
+/* ============================================
+   Shalom Academy
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap');
+
+:root{
+  --pink:        #F28FB2;
+  --pink-deep:   #E85D93;
+  --pink-soft:   #FCE1EC;
+  --blue:        #A9D8E8;
+  --blue-soft:   #E4F3F8;
+  --yellow:      #F5DE8C;
+  --yellow-soft: #FBF3D6;
+  --ink:         #221F26;
+  --ink-soft:    #6B5D6E;
+  --cream:       #FFFBF7;
+  --white:       #FFFFFF;
+  --radius-lg:   26px;
+  --radius-md:   16px;
+  --shadow-soft: 0 10px 28px rgba(232, 93, 147, 0.16);
+}
+
+*{ box-sizing: border-box; }
+
+html{ scroll-behavior: smooth; }
+
+body{
+  font-family: 'Nunito', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  padding-top: 68px; /* espacio para navbar fija */
+}
+
+h1, h2, h3, h4, .brand-font{
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+a{ color: var(--pink-deep); }
+a:hover{ color: var(--ink); }
+
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+}
+
+/* ---------- Navbar ---------- */
+.navbar-shalom{
+  background: rgba(255, 251, 247, 0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 18px rgba(34, 31, 38, 0.06);
+}
+.navbar-shalom .navbar-brand img{
+  height: 42px;
+  width: auto;
+}
+.navbar-shalom .nav-link{
+  font-weight: 700;
+  color: var(--ink);
+  padding: 0.5rem 0.9rem !important;
+  border-radius: 999px;
+  transition: background .2s ease, color .2s ease;
+}
+.navbar-shalom .nav-link:hover,
+.navbar-shalom .nav-link.active{
+  background: var(--pink-soft);
+  color: var(--pink-deep);
+}
+.navbar-shalom .btn-nav-cta{
+  background: linear-gradient(135deg, var(--pink), var(--pink-deep));
+  color: #fff;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.5rem 1.3rem;
+  box-shadow: var(--shadow-soft);
+}
+.navbar-shalom .btn-nav-cta:hover{ color:#fff; opacity:.92; }
+.navbar-shalom .brand-name{
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--pink-deep);
+  letter-spacing: -0.01em;
+}
+
+/* ---------- Íconos (footer) ---------- */
+.social-icons{ display:flex; gap:12px; flex-wrap:wrap; }
+.social-icon{
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  display:flex; align-items:center; justify-content:center;
+  font-size: 1.2rem;
+  transition: background .25s ease, transform .25s ease;
+}
+.social-icon:hover{
+  background: linear-gradient(135deg, var(--pink), var(--pink-deep));
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* ---------- Tarjeta única de info (contacto / ubicación) ---------- */
+.info-list{ list-style:none; padding:0; margin:0; }
+.info-list li{
+  display:flex;
+  gap:14px;
+  padding:14px 0;
+  border-bottom: 1px solid var(--pink-soft);
+}
+.info-list li:last-child{ border-bottom:none; }
+.info-list .ico{
+  width:40px; height:40px;
+  min-width:40px;
+  border-radius:50%;
+  background: var(--pink-soft);
+  color: var(--pink-deep);
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.05rem;
+}
+.info-list b{ display:block; font-size:.78rem; text-transform:uppercase; letter-spacing:.03em; color:var(--ink-soft); }
+
+/* ---------- Navbar dropdown ---------- */
+.navbar-shalom .dropdown-menu{
+  border: none;
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+  padding: 10px;
+}
+.navbar-shalom .dropdown-item{
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 8px 14px;
+}
+.navbar-shalom .dropdown-item:hover{
+  background: var(--pink-soft);
+  color: var(--pink-deep);
+}
+
+/* ---------- Header de Home ---------- */
+.home-header{
+  position: relative;
+  padding: 5rem 0;
+  background:
+    radial-gradient(circle at 15% 20%, var(--yellow-soft), transparent 55%),
+    radial-gradient(circle at 85% 10%, var(--blue-soft), transparent 50%),
+    linear-gradient(180deg, var(--pink-soft), var(--cream));
+}
+.home-header-content{ position:relative; z-index:1; }
+.home-title{
+  color: var(--ink);
+  font-size: clamp(2.1rem, 5.5vw, 3.2rem);
+  line-height:1.1;
+}
+.home-title span{ color: var(--pink-deep); }
+.home-lead{
+  color: var(--ink-soft);
+  font-size:1.1rem;
+  max-width:56ch;
+}
+.home-logo-img{
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  border-radius: 32px;
+  box-shadow: var(--shadow-soft);
+}
+
+/* ---------- Carrusel ---------- */
+.carousel-shalom{
+  width: 100%;
+}
+.carousel-item{
+  position: relative;
+  height: 65vh;
+  min-height: 380px;
+  max-height: 600px;
+  overflow: hidden;
+  background: var(--ink);
+}
+.carousel-slide-bg{
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(25px) brightness(0.6);
+  transform: scale(1.15);
+}
+.carousel-img{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.carousel-caption{
+  background: rgba(34,31,38,0.68);
+  border-radius: 20px;
+  padding: 18px 24px;
+  bottom: 6%;
+  left: 6%;
+  right: 6%;
+  z-index: 2;
+}
+.carousel-caption h3{
+  font-family:'Fredoka',sans-serif;
+  font-size:1.3rem;
+  color: var(--yellow);
+}
+.carousel-caption p{ color:#fff; }
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  background-color: var(--pink-deep);
+  border-radius: 50%;
+  padding: 16px;
+}
+@media (max-width: 576px){
+  .carousel-item{ height: 50vh; min-height: 300px; }
+  .carousel-caption{ padding: 12px 16px; left:4%; right:4%; }
+  .carousel-caption h3{ font-size: 1.05rem; }
+}
+
+/* ---------- redes sociales (Home) ---------- */
+.social-panel{
+  background: linear-gradient(135deg, var(--pink-soft), var(--blue-soft));
+  border-radius: var(--radius-lg);
+  padding: 2.4rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 2rem;
+  flex-wrap:wrap;
+}
+.social-panel-icon{
+  width:56px; height:56px;
+  border-radius:50%;
+  color:#fff;
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.5rem;
+  box-shadow: var(--shadow-soft);
+  transition: transform .25s ease;
+}
+.social-panel-icon:hover{ transform: translateY(-4px) scale(1.05); color:#fff; }
+.social-panel-icon.sm{ width:40px; height:40px; font-size:1.1rem; }
+
+@media (max-width: 768px){
+  .home-logo-img{ max-width: 180px; }
+}
+
+/* ---------- Footer ---------- */
+.site-footer-panel{
+  padding: 1.8rem 0;
+  background: linear-gradient(135deg, var(--pink-soft), var(--blue-soft));
+  border-top: 1px solid rgba(34,31,38,0.06);
+}
+.footer-panel-top{ display:flex; align-items:center; gap:1.4rem; flex-wrap:wrap; justify-content:space-between; }
+.footer-logo{ height:46px; width:46px; object-fit:cover; border-radius:12px; background:#fff; padding:5px; box-shadow: var(--shadow-soft); }
+.site-footer-panel hr{ border: none; border-top: 1px solid rgba(34,31,38,0.12); margin: 1rem 0; }
+.footer-panel-links a{ color:var(--ink); font-weight:700; font-size:.85rem; text-decoration:none; }
+.footer-panel-links a:hover{ color: var(--pink-deep); }
+
+/* ---------- Filtros de galería ---------- */
+.filtro-btn.active{
+  background: linear-gradient(135deg, var(--pink), var(--pink-deep));
+  color:#fff;
+  border-color: transparent;
+}
+
+/* ---------- Hero genérico por página ---------- */
+.page-hero{
+  padding: 3rem 0 2.5rem;
+  background:
+    radial-gradient(circle at 15% 20%, var(--yellow-soft), transparent 55%),
+    radial-gradient(circle at 85% 10%, var(--blue-soft), transparent 50%),
+    linear-gradient(180deg, var(--pink-soft), var(--cream));
+}
+.page-hero .eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  background: var(--white);
+  color: var(--pink-deep);
+  font-weight:700;
+  font-size:.78rem;
+  letter-spacing:.03em;
+  padding:6px 14px;
+  border-radius:999px;
+  margin-bottom:14px;
+  box-shadow: var(--shadow-soft);
+}
+.page-hero h1{
+  font-size: clamp(1.9rem, 6vw, 2.9rem);
+  line-height:1.12;
+}
+.page-hero p.lead{
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+  max-width: 60ch;
+}
+
+/* ---------- Secciones ---------- */
+section{ padding: 3rem 0; }
+.section-alt{ background: var(--white); }
+
+.badge-dot{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-weight:700;
+  font-size:.85rem;
+  color: var(--ink);
+}
+.badge-dot::before{
+  content:"";
+  width:8px; height:8px;
+  border-radius:50%;
+  background: var(--pink-deep);
+}
+
+/* ---------- Tarjetas ---------- */
+.card-shalom{
+  background: var(--white);
+  border: 1px solid rgba(232, 93, 147, 0.1);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 1.6rem;
+  height: 100%;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card-shalom:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 34px rgba(232, 93, 147, 0.22);
+}
+.card-shalom .tag{
+  display:inline-block;
+  background: var(--pink-soft);
+  color: var(--pink-deep);
+  font-weight:700;
+  font-size:.75rem;
+  padding:4px 12px;
+  border-radius:999px;
+  margin-bottom:12px;
+}
+
+/* ---------- Botones ---------- */
+.btn-shalom-primary{
+  background: linear-gradient(135deg, var(--pink), var(--pink-deep));
+  color:#fff;
+  font-weight:700;
+  border:none;
+  border-radius:999px;
+  padding:.7rem 1.6rem;
+  box-shadow: var(--shadow-soft);
+}
+.btn-shalom-primary:hover{ color:#fff; transform: translateY(-2px); }
+.btn-shalom-outline{
+  background: transparent;
+  border:2px solid var(--pink);
+  color: var(--pink-deep);
+  font-weight:700;
+  border-radius:999px;
+  padding:.65rem 1.5rem;
+}
+.btn-shalom-outline:hover{ background: var(--pink-soft); color: var(--pink-deep); }
+
+/* ---------- Historia ---------- */
+.timeline{ position:relative; padding-left: 28px; border-left: 3px solid var(--pink-soft); }
+.timeline-item{ position:relative; margin-bottom: 2rem; }
+.timeline-item::before{
+  content:"";
+  position:absolute;
+  left:-38px; top:4px;
+  width:16px; height:16px;
+  border-radius:50%;
+  background: var(--pink-deep);
+  border: 3px solid var(--pink-soft);
+}
+.timeline-item .year{
+  font-family:'Fredoka', sans-serif;
+  color: var(--pink-deep);
+  font-weight:700;
+}
+
+/* ---------- horarios ---------- */
+.table-shalom{ background:#fff; border-radius: var(--radius-md); overflow:hidden; box-shadow: var(--shadow-soft); }
+.table-shalom thead th{ background: var(--pink-soft); color: var(--pink-deep); font-family:'Fredoka',sans-serif; border:none; }
+.table-shalom td, .table-shalom th{ vertical-align:middle; padding:.9rem 1rem; }
+
+/* ---------- Galería ---------- */
+.gallery-item{
+  border-radius: var(--radius-md);
+  overflow:hidden;
+  box-shadow: var(--shadow-soft);
+  position:relative;
+  cursor:pointer;
+}
+.gallery-item img{
+  width:100%; height:100%;
+  object-fit:cover;
+  aspect-ratio: 4/3;
+  transition: transform .4s ease;
+}
+.gallery-item:hover img{ transform: scale(1.06); }
+.gallery-item .cap{
+  position:absolute; inset:auto 0 0 0;
+  background: linear-gradient(0deg, rgba(34,31,38,0.75), transparent);
+  color:#fff; font-weight:700; font-size:.85rem;
+  padding: 24px 14px 10px;
+}
+
+/* ---------- Mapa ---------- */
+.map-frame{
+  width:100%; height: 360px;
+  border:0; border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+.geo-result{
+  background: var(--blue-soft);
+  border-radius: var(--radius-md);
+  padding: 1.1rem 1.3rem;
+  font-weight:600;
+}
+.geo-result.ok{ background: var(--pink-soft); }
+
+/* ---------- Multimedia ---------- */
+.media-card{
+  background:#fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 1.4rem;
+}
+video, audio{ width:100%; border-radius: var(--radius-md); }
+
+/* ---------- final ---------- */
+.cta-block{
+  background: linear-gradient(135deg, var(--pink-deep), var(--pink));
+  border-radius: 30px;
+  padding: 2.6rem 1.6rem;
+  color:#fff;
+  text-align:center;
+}
+.cta-block .btn-shalom-primary{ background:#fff; color:var(--pink-deep); }
+
+/* ---------- Navegación ---------- */
+.page-nav{
+  display:flex;
+  justify-content:space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--pink-soft);
+}
+.page-nav a{
+  display:flex;
+  flex-direction:column;
+  font-size:.82rem;
+  font-weight:700;
+  color: var(--ink-soft);
+  max-width: 46%;
+}
+.page-nav a span.dir{ color: var(--pink-deep); font-size:.75rem; margin-bottom:2px; }
+.page-nav a.next{ text-align:right; margin-left:auto; }
+
+/* ---------- Footer ---------- */
+footer.site-footer{
+  background: var(--ink);
+  color: #E7DEE9;
+  padding: 3rem 0 1.6rem;
+  margin-top: 3rem;
+}
+footer.site-footer a{ color:#CFC2D2; }
+footer.site-footer a:hover{ color: var(--pink); }
+footer.site-footer h5{ color:#fff; font-family:'Fredoka',sans-serif; font-size:1rem; }
+.footer-bottom{
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 1.8rem;
+  padding-top: 1.2rem;
+  font-size:.8rem;
+  color:#B3A5B5;
+}
+
+/* ---------- telefono ---------- */
+@media (min-width: 768px){
+  body{ padding-top: 76px; }
+  .page-hero{ padding: 4.5rem 0; }
+  section{ padding: 4.5rem 0; }
+}

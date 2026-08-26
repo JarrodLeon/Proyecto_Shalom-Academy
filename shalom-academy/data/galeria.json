@@ -1,0 +1,14 @@
+[
+  { "tipo": "foto", "src": "images/galeria/fin-de-ano-grupo.jpg", "thumb": "images/galeria/fin-de-ano-grupo.jpg", "titulo": "Presentación de Fin de Año", "caption": "Grupo de Kids en la presentación navideña", "pos": "center 25%" },
+  { "tipo": "foto", "src": "images/galeria/mommy-and-me.jpg", "thumb": "images/galeria/mommy-and-me.jpg", "titulo": "Mommy & Me", "caption": "El vínculo entre madres e hijas en cada clase", "pos": "center 20%" },
+  { "tipo": "foto", "src": "images/galeria/kids-obstaculos.jpg", "thumb": "images/galeria/kids-obstaculos.jpg", "titulo": "Kids Recreativo", "caption": "Circuito de obstáculos para las más pequeñas", "pos": "center 20%" },
+  { "tipo": "foto", "src": "images/galeria/fin-de-ano-cuarteto.jpg", "thumb": "images/galeria/fin-de-ano-cuarteto.jpg", "titulo": "Presentación de Fin de Año", "caption": "Cuarteto en la presentación navideña", "pos": "center 15%" },
+  { "tipo": "foto", "src": "images/galeria/leotardos-coronas.jpg", "thumb": "images/galeria/leotardos-coronas.jpg", "titulo": "Competencia regional", "caption": "Atletas listas para competir", "pos": "center 15%" },
+  { "tipo": "foto", "src": "images/galeria/medallas-podio-individual.jpg", "thumb": "images/galeria/medallas-podio-individual.jpg", "titulo": "Podio individual", "caption": "Celebrando una nueva medalla", "pos": "center 15%" },
+  { "tipo": "foto", "src": "images/galeria/equipo-podio-medallas.jpg", "thumb": "images/galeria/equipo-podio-medallas.jpg", "titulo": "Equipo de Competencia", "caption": "Nuestro equipo en el podio", "pos": "center 15%" },
+  { "tipo": "foto", "src": "images/galeria/torneo-flores.jpg", "thumb": "images/galeria/torneo-flores.jpg", "titulo": "Torneo de las Flores", "caption": "Oro en la 9ª edición del Torneo de las Flores", "pos": "center 20%" },
+  { "tipo": "foto", "src": "images/galeria/solo-turquesa.jpg", "thumb": "images/galeria/solo-turquesa.jpg", "titulo": "Presentación en escena", "caption": "Rutina individual en presentación", "pos": "center 15%" },
+  { "tipo": "foto", "src": "images/galeria/grupo-turquesa-alzada.jpg", "thumb": "images/galeria/grupo-turquesa-alzada.jpg", "titulo": "Trabajo en equipo", "caption": "Nuestras gimnastas en rutina grupal", "pos": "center 20%" },
+  { "tipo": "video", "src": "media/clase-entrenamiento.mp4", "poster": "images/galeria/poster-clase-entrenamiento.jpg", "titulo": "Clase de entrenamiento", "caption": "Nuestras atletas practicando técnica y flexibilidad" },
+  { "tipo": "video", "src": "media/instalaciones-clase.mp4", "poster": "images/galeria/poster-instalaciones.jpg", "titulo": "Un vistazo a nuestras instalaciones", "caption": "Clase en nuestro salón de entrenamiento" }
+]
